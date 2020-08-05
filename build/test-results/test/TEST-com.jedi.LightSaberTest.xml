@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.jedi.LightSaberTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-08-05T15:50:15" hostname="LAPTOP-PPQ781RU" time="0.023">
+<testsuite name="com.jedi.LightSaberTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-08-05T16:00:13" hostname="LAPTOP-PPQ781RU" time="0.026">
   <properties/>
-  <testcase name="canChangeColorOfLightSaber()" classname="com.jedi.LightSaberTest" time="0.016"/>
-  <testcase name="initializesWith300MinutesUsage()" classname="com.jedi.LightSaberTest" time="0.001"/>
+  <testcase name="setChargeToSpecificLevel()" classname="com.jedi.LightSaberTest" time="0.015"/>
+  <testcase name="useLightSaberReducesCharge()" classname="com.jedi.LightSaberTest" time="0.001"/>
+  <testcase name="canChangeColorOfLightSaber()" classname="com.jedi.LightSaberTest" time="0.001"/>
   <testcase name="initializesWithJediSerialNumber()" classname="com.jedi.LightSaberTest" time="0.0"/>
+  <testcase name="initializesWith600MinutesUsage()" classname="com.jedi.LightSaberTest" time="0.001"/>
   <testcase name="initialLightSaberColorIsGreen()" classname="com.jedi.LightSaberTest" time="0.001"/>
+  <testcase name="rechargeBringsLightSaberTo100()" classname="com.jedi.LightSaberTest" time="0.001"/>
   <testcase name="initialChargeIsFull()" classname="com.jedi.LightSaberTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

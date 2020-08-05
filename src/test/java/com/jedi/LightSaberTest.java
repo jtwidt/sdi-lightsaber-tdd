@@ -46,12 +46,12 @@ public class LightSaberTest {
     }
 
     @Test
-    public void initializesWith300MinutesUsage() {
+    public void initializesWith600MinutesUsage() {
         //Setup
         LightSaber lightSaber = new LightSaber(12345);
 
         //Execution
-        float expected = 300.0f;
+        float expected = 600.0f;
         float actual = lightSaber.getRemainingMinutes();
 
         //Assertion
@@ -67,6 +67,52 @@ public class LightSaberTest {
         String expected = "blue";
         lightSaber.setColor("blue");
         String actual = lightSaber.getColor();
+
+        //Assertion
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void useLightSaberReducesCharge() {
+        //Setup
+        LightSaber lightSaber = new LightSaber(12345);
+
+        //Execution
+        float expected = 50.0f;
+        lightSaber.use(300.0f);
+        float actual = lightSaber.getCharge();
+
+        //Assertion
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void rechargeBringsLightSaberTo100() {
+        //Setup
+        LightSaber lightSaber = new LightSaber(12345);
+
+        //Execution
+        float expected = 100.0f;
+        lightSaber.use(300.0f);
+        float usedExpected = 50.0f;
+        float usedActual = lightSaber.getCharge();
+        lightSaber.recharge();
+        float actual = lightSaber.getCharge();
+
+        //Assertion
+        assertEquals(usedExpected, usedActual);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void setChargeToSpecificLevel(){
+        //Setup
+        LightSaber lightSaber = new LightSaber(12345);
+
+        //Execution
+        float expected = 75.0f;
+        lightSaber.setCharge(75.0f);
+        float actual = lightSaber.getCharge();
 
         //Assertion
         assertEquals(expected, actual);

@@ -37,7 +37,7 @@ public class LightSaber {
     }
 
     public float getRemainingMinutes() {
-        return ((charge/EFFICIENCY)*30);
+        return ((charge/EFFICIENCY)*60);
     }
 
     public void recharge(){
