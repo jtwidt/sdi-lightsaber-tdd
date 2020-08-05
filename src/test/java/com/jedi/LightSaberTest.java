@@ -18,4 +18,17 @@ public class LightSaberTest {
         //Assertion
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void initializesWithJediSerialNumber() {
+        //Setup
+        LightSaber lightSaber = new LightSaber(12345);
+
+        //Execution
+        long expected = 12345;
+        long actual = lightSaber.getJediSerialNumber();
+
+        //Assertion
+        assertEquals(expected, actual);
+    }
 }
