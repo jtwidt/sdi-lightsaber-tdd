@@ -57,4 +57,18 @@ public class LightSaberTest {
         //Assertion
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void canChangeColorOfLightSaber() {
+        //Setup
+        LightSaber lightSaber = new LightSaber(12345);
+
+        //Execution
+        String expected = "blue";
+        lightSaber.setColor("blue");
+        String actual = lightSaber.getColor();
+
+        //Assertion
+        assertEquals(expected, actual);
+    }
 }
