@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.jedi.LightSaberTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-08-05T15:45:43" hostname="LAPTOP-PPQ781RU" time="0.013">
+<testsuite name="com.jedi.LightSaberTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-08-05T15:48:07" hostname="LAPTOP-PPQ781RU" time="0.019">
   <properties/>
-  <testcase name="initializesWithJediSerialNumber()" classname="com.jedi.LightSaberTest" time="0.009"/>
-  <testcase name="initialLightSaberColorIsGreen()" classname="com.jedi.LightSaberTest" time="0.001"/>
+  <testcase name="initializesWith300MinutesUsage()" classname="com.jedi.LightSaberTest" time="0.014"/>
+  <testcase name="initializesWithJediSerialNumber()" classname="com.jedi.LightSaberTest" time="0.0"/>
+  <testcase name="initialLightSaberColorIsGreen()" classname="com.jedi.LightSaberTest" time="0.0"/>
   <testcase name="initialChargeIsFull()" classname="com.jedi.LightSaberTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

@@ -44,4 +44,17 @@ public class LightSaberTest {
         //Assertion
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void initializesWith300MinutesUsage() {
+        //Setup
+        LightSaber lightSaber = new LightSaber(12345);
+
+        //Execution
+        float expected = 300.0f;
+        float actual = lightSaber.getRemainingMinutes();
+
+        //Assertion
+        assertEquals(expected, actual);
+    }
 }
